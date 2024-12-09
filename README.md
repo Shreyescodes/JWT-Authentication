@@ -85,26 +85,6 @@ jwt-auth-project/
 - `PUT /api/user/profile/` - Update user profile
 - `GET /api/protected-resource/` - Access protected resource
 
-## Usage
-
-### Registration
-```bash
-curl -X POST http://localhost:8000/api/auth/register/ \
-    -H "Content-Type: application/json" \
-    -d '{"username":"testuser","password":"testpass123","email":"test@example.com"}'
-```
-
-### Login
-```bash
-curl -X POST http://localhost:8000/api/auth/login/ \
-    -H "Content-Type: application/json" \
-    -d '{"username":"testuser","password":"testpass123"}'
-```
-
-### Accessing Protected Routes
-```bash
-curl http://localhost:8000/api/protected-resource/ \
-    -H "Authorization: Bearer <your_access_token>"
 ```
 
 ## Configuration
@@ -152,7 +132,7 @@ python manage.py test
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Authors
-- @Shreyescodes
+- Your Name (@Shreyescodes)
 
 ## Acknowledgments
 - Django REST Framework documentation
